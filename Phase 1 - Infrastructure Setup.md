@@ -50,6 +50,22 @@ New Server Machine Name: VMSERVER
 
 ### Domain Creation & Server Promotion to Domain Controller
 
+The following Domain was created and promoted to a domain controller. 
+
+Domain Name: helpdesklabs.local
+
+![Promote Domain Controller and New Forrest Creation](image url .png)
+
+
+The domain was successfully created and confirmed via PowerShell: GET-ADFOREST 
+
+![Domain setup successful 2](image url .png)
+![Domain Controller Set](image url .png)
+
+
+![domain setup successful](image url .png)
+
+
 ### Active Directory Domain Services and DHCP Server Installation
 
 Active Directory Domain Services and the DHCP Server were installed via the Server Manager roles. 
@@ -97,4 +113,24 @@ Next, the host range was configured. [*Add-DhcpServerv4Scope -Name "SRLLC Networ
 	- Password: ***********
 
 ![Windows 10 Enterprise Install](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/60906aa25c5e309d044716d092637e5e6d048aef/AD%20Screenshots/Windows%2010%20Pro%20Install.png)
+
+### Adding the Client Workstation to the Domain
+
+The Workstation: VMCLIENT01 was added to the Domain: helpdesklabs using the system settings.
+
+[*System Settings > System > About > Rename this PC (advanced) > Computer Name Tab > Change > Domain > Enter Domain Name > OK > Apply + OK *]
+
+![enter domain name](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/4b38cfe198f14ef9f6f2d3ce36c765a36c7f852c/AD%20Screenshots/enter%20domain%20name.png)
+
+![domain add successful]
+
+Once the workstation was rebooted, the login to the domain was tested. *A demo user was created for the client machine. The user creation process was detailed in Phase 2: User & Group Management.*
+
+- User Logon Name: dmoore
+- Name: Daniel Moore
+- Role: IT Manager
+- Department: IT Support
+
+![domain login successful]
+
 
