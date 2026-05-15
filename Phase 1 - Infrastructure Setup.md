@@ -2,8 +2,8 @@
   <img src="AD%20Screenshots/MS%20Active%20Directory%20Logo.png" alt="MS Active Directory Logo">
 </p>
 
-# Phase 1: Infrasructure Setup
-This section explains the required prerequisites and installation process for setting up the Active Direcory on a Windows Server. Active Directory would be used to manage the Users, Computers and Policies required for the operations of a ficticious company called Shopper's Rite LLC. 
+# Phase 1: Infrastructure Setup
+This section explains the required prerequisites and installation process for setting up the Active Directory on a Windows Server. Active Directory would be used to manage the users, computers, and Policies required for the operations of a fictitious company called Shopper's Rite LLC. 
 
 ## Environments & Technologies
 - Oracle VirtualBox
@@ -44,7 +44,7 @@ Control Panel > Network and Sharing Center > Change Adaper Settings > Right-clic
 ![Server Static IP address set](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/fc15378360f2a26ac2c8791fd1b0c435f9d58116/AD%20Screenshots/Server%20Static%20IP%20address%20set.png)
 
 ### Rename Server Machine
-Server Manager > Local server > Click Computer Name > Under Computer Name Tab > Set Compter Description >  Select Change > Set Computer Name > OK > Reboot Server.
+Server Manager > Local server > Click Computer Name > Under Computer Name Tab > Set Computer Description >  Select Change > Set Computer Name > OK > Reboot Server.
 
 New Server Machine Name: VMSERVER
 
@@ -52,22 +52,22 @@ New Server Machine Name: VMSERVER
 
 ### Active Directory Domain Services and DHCP Server Installation
 
-Active Directory Domain Servies and the DHCP Server were installed via the Server Manager roles. 
+Active Directory Domain Services and the DHCP Server were installed via the Server Manager roles. 
 
-Go to: Server Manager > Manage > Add Roles and Features > Select: Active Direcory Domain Services & DHCP Server
+Go to: Server Manager > Manage > Add Roles and Features > Select: Active Directory Domain Services & DHCP Server
 
 ![AD Center Overview](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/be383c9a8f583ecc812f51396b5d347d8c25d609/AD%20Screenshots/AD%20Center%20Overview.png)
 
 ![DHCP and AD Server Roles Install](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/5d4bf2e85b22576710318739bc3ae1a22994a4d5/AD%20Screenshots/DHCP%20and%20AD%20Server%20Roles%20Install.png)
 
 - AD Server Role:
-	- Installation Type: "Role-based or feature-based installation"
+	- Installation Type: "Role-based or feature-based installation."
 	- Server Selection:  VMSERVER.helpdesklabs.Local
-	- Server Roles: Active Direcotory Domain Services
+	- Server Roles: Active Directory Domain Services
 
 ### DHCP Server Configuration
 
-The DHCP Server is responsible for managing and delegating IP addresses to the workstations connected to the domain: helpdesklabs.local the DHCP Server needed to be added to the list of authorized DHCP servers in Active Directory via PowerShell.
+The DHCP Server is responsible for managing and delegating IP addresses to the workstations connected to the domain: helpdesklabs.local. The DHCP Server needed to be added to the list of authorized DHCP servers in Active Directory via PowerShell.
 
 [*Add-DhcpServerInDC -DnsName SRLLC_DHCP1 -IPAddress 192.168.10.0*]
 
@@ -88,3 +88,13 @@ Next, the host range was configured. [*Add-DhcpServerv4Scope -Name "SRLLC Networ
 *A new user with admin privileges was created. We would go into user creation in detail in the subsequent phases.*
 
 ## 2. Client VM Configuration
+
+- Installed Windows 10 Pro (22H2) | Build 19045.4529 and ran system updates
+
+- Renamed Workstation to match the company naming convention:
+	- Workstation Name: VMCLIENT01
+	- Username: srllcadmin
+	- Password: ***********
+
+![Windows 10 Enterprise Install](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/60906aa25c5e309d044716d092637e5e6d048aef/AD%20Screenshots/Windows%2010%20Pro%20Install.png)
+
