@@ -19,12 +19,11 @@ This section explains the required prerequisites and installation process for se
 ![network adapter set](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/90c8a37bef31f24c27c3295981e2c14831b95402/AD%20Screenshots/network%20adapter%20set.png)
 
 - Win Server 2022 VM Configuration
-  - Set static IP for the Server Machine
-  - Rename Server Machine
-  - Domain Creation & Server Promotion to Domain Controller
+  	- Set static IP for the Server Machine
+  	- Rename Server Machine
+  	- Domain Creation & Server Promotion to Domain Controller
 	- Active Directory Domain Services and DHCP Server Installation
 	- DHCP Server Configuration
-	- Test Domain User Creation
 	
 - Client VM Configuration
 	- Install Win 10 Pro OS
@@ -53,11 +52,18 @@ New Server Machine Name: VMSERVER
 
 ### Active Directory Domain Services and DHCP Server Installation
 
-Active Directory Domain Servies and the DHCP Server were installed via the Server Manager Server roles. 
+Active Directory Domain Servies and the DHCP Server were installed via the Server Manager roles. 
 
 Go to: Server Manager > Manage > Add Roles and Features > Select: Active Direcory Domain Services & DHCP Server
 
+![AD Center Overview](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/be383c9a8f583ecc812f51396b5d347d8c25d609/AD%20Screenshots/AD%20Center%20Overview.png)
+
 ![DHCP and AD Server Roles Install](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/5d4bf2e85b22576710318739bc3ae1a22994a4d5/AD%20Screenshots/DHCP%20and%20AD%20Server%20Roles%20Install.png)
+
+- AD Server Role:
+	- Installation Type: "Role-based or feature-based installation"
+	- Server Selection:  VMSERVER.helpdesklabs.Local
+	- Server Roles: Active Direcotory Domain Services
 
 ### DHCP Server Configuration
 
@@ -76,5 +82,9 @@ The authorization was then confirmed. [*Get-DhcpServerInDC*]
 
 Next, the host range was configured. [*Add-DhcpServerv4Scope -Name "SRLLC Network" -StartRange 192.168.10.1 -EndRange 192.168.10.254 -SubnetMask 255.255.255.0*]
 
-Usable Host IP Range: 192.168.10.1 - 192.168.10.254
-Subnet Mask: 255.255.255.0
+- Usable Host IP Range: 192.168.10.1 - 192.168.10.254
+- Subnet Mask: 255.255.255.0
+
+*A new user with admin privileges was created. We would go into user creation in detail in the subsequent phases.*
+
+## 2. Client VM Configuration
