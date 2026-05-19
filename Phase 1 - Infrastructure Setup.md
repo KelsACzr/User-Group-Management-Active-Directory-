@@ -44,10 +44,14 @@ Control Panel > Network and Sharing Center > Change Adaper Settings > Right-clic
 
 ![Server Static IP address set](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/fc15378360f2a26ac2c8791fd1b0c435f9d58116/AD%20Screenshots/Server%20Static%20IP%20address%20set.png)
 
+
 ### Rename Server Machine
 Server Manager > Local server > Click Computer Name > Under Computer Name Tab > Set Computer Description >  Select Change > Set Computer Name > OK > Reboot Server.
 
 New Server Machine Name: VMSERVER
+
+![new server name](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/f1ab94c15f15f4a75b8d5da2d6fdedc34386d2ce/AD%20Screenshots/new%20server%20name.png)
+
 
 ### Domain Creation & Server Promotion to Domain Controller
 
@@ -55,16 +59,17 @@ The following Domain was created and promoted to a domain controller.
 
 Domain Name: helpdesklabs.local
 
-![Promote Domain Controller and New Forrest Creation](image url .png)
+![Promote Domain Controller and New Forrest Creation](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/e5754f6fcb797dbfa98a3caf17e0fc2bc1c36b3a/AD%20Screenshots/Promote%20Domain%20Controller%20and%20New%20Forrest%20Creation.png)
 
 
 The domain was successfully created and confirmed via PowerShell: GET-ADFOREST 
 
-![Domain setup successful 2](image url .png)
-![Domain Controller Set](image url .png)
+![Domain setup successful 2](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/e5754f6fcb797dbfa98a3caf17e0fc2bc1c36b3a/AD%20Screenshots/Domain%20setup%20successful%202.png)
+
+![Domain Controller Set](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/bc2fa480fb6c85b4b524ba9100ef31d2328b7af9/AD%20Screenshots/Domain%20Controller%20Set.png)
 
 
-![domain setup successful](image url .png)
+![domain setup successful](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/bc2fa480fb6c85b4b524ba9100ef31d2328b7af9/AD%20Screenshots/domain%20setup%20successful.png)
 
 
 ### Active Directory Domain Services and DHCP Server Installation
