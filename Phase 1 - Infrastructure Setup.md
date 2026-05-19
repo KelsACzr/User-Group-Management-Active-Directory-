@@ -8,7 +8,7 @@ This section explains the required prerequisites and installation process for se
 ## Environments & Technologies
 - Oracle VirtualBox
 - Active Directory Domain Services (AD DS)
-- Group Policy (GPO)
+
 
 ## Operating System
 - Windows Server 2022 (21H2) | Build 20348.587
@@ -55,9 +55,9 @@ New Server Machine Name: VMSERVER
 
 ### Domain Creation & Server Promotion to Domain Controller
 
-The following Domain was created and promoted to a domain controller. 
+The following Domain was created and promoted to a domain controller using the Active Directory Deployment Configuration when prompted.
 
-Domain Name: helpdesklabs.local
+Root Domain Name: helpdesklabs.local
 
 ![Promote Domain Controller and New Forrest Creation](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/e5754f6fcb797dbfa98a3caf17e0fc2bc1c36b3a/AD%20Screenshots/Promote%20Domain%20Controller%20and%20New%20Forrest%20Creation.png)
 
@@ -65,6 +65,7 @@ Domain Name: helpdesklabs.local
 The domain was successfully created and confirmed via PowerShell: GET-ADFOREST 
 
 ![Domain setup successful 2](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/e5754f6fcb797dbfa98a3caf17e0fc2bc1c36b3a/AD%20Screenshots/Domain%20setup%20successful%202.png)
+
 
 ![Domain Controller Set](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/bc2fa480fb6c85b4b524ba9100ef31d2328b7af9/AD%20Screenshots/Domain%20Controller%20Set.png)
 
@@ -108,6 +109,7 @@ Next, the host range was configured. [*Add-DhcpServerv4Scope -Name "SRLLC Networ
 - Subnet Mask: 255.255.255.0
 
 *A new user with admin privileges was created. We would go into user creation in detail in the subsequent phases.*
+
 
 ## 2. Client VM Configuration
 
