@@ -126,11 +126,15 @@ Next, the host range was configured. [*Add-DhcpServerv4Scope -Name "SRLLC Networ
 
 The Workstation: VMCLIENT01 was added to the Domain: helpdesklabs using the system settings.
 
-[*System Settings > System > About > Rename this PC (advanced) > Computer Name Tab > Change > Domain > Enter Domain Name > OK > Apply + OK *]
+[*System Settings > System > About > Rename this PC (advanced) > Computer Name Tab > Change > Domain > Enter Domain Name > OK > Apply + OK*]
 
 ![enter domain name](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/4b38cfe198f14ef9f6f2d3ce36c765a36c7f852c/AD%20Screenshots/enter%20domain%20name.png)
 
-![domain add successful]
+![ws domain change](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/027c3dc7833c24d6711847bcd0599c93daa778b1/AD%20Screenshots/ws%20domain%20change.png)
+
+The workstation was successfully added to the list of computers in Active Directory on the helpdesklabs.local domain.
+
+![ws domain add successful](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/027c3dc7833c24d6711847bcd0599c93daa778b1/AD%20Screenshots/ws%20domain%20add%20successful%20AD.png)
 
 Once the workstation was rebooted, the login to the domain was tested. *A demo user was created for the client machine. The user creation process was detailed in Phase 2: User & Group Management.*
 
