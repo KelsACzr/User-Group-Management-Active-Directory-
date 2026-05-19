@@ -143,6 +143,7 @@ Once the workstation was rebooted, the login to the domain was tested. *A demo u
 - Role: IT Manager
 - Department: IT Support
 
-![domain login successful]
+![domain login prompt](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/2e163f3ad3e5003cf5a8440a3f9b6179df4b00b2/AD%20Screenshots/domain%20login%20prompt.png)
+![dmoore login confirmed](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/376f29de701ccef156f5d4247222a1d37bc69170/AD%20Screenshots/dmoore%20login%20confirmed.png)
 
 
