@@ -7,7 +7,8 @@ This section explains the required prerequisites and installation process for se
 
 ## Environments & Technologies
 - Oracle VirtualBox
-- Internet Information Services (IIS)
+- Active Directory Domain Services (AD DS)
+- Group Policy (GPO)
 
 ## Operating System
 - Windows Server 2022 (21H2) | Build 20348.587
