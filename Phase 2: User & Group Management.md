@@ -60,7 +60,7 @@ This user was assigned to the following groups: IT_Users, Domain Users (added au
 
 ![Users List](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/9ec7839ec770a0d7cc4d34ae3aefabbb9cd4b9c3/AD%20Screenshots/Users%20List.png)
 
-In the final phase of this lab, we explore Group Policy, Access Management, and Common Tasks done in Active Directory by a Technical Support Specialist.
+In the final phase of this lab, I explore Group Policy, Access Management, and Common Tasks done in Active Directory by a Technical Support Specialist.
 
 
 
