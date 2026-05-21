@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="AD%20Screenshots/MS%20Active%20Directory%20Logo.png" alt="MS Active Directory Logo">
+  <img src="AD%20Screenshots/MS%20Active%20Directory%20Logo.png" alt="MS Active Directory Logo" width="600" height="600">
 </p>
 
 # Phase 1: Infrastructure Setup
