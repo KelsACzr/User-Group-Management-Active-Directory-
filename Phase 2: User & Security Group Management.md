@@ -32,8 +32,8 @@ Using the Active Directory Administrative Center, a new Organizational Unit was 
 A total of 20 staff members and 6 groups were added to the ShopRite Group organizational unit.
 
 - New Group Name: IT_Users
-- Group Type: *Security* - to ensure that the assigned users will have permissions to the shared resources for this group
-- Group Scope: *Global* -  to ensure that ...
+- Group Type: *Security* - to ensure that the assigned users will have permissions to the shared resources on the helpdesklabs domain.
+- Group Scope: *Global* -  to grant access to team-specific resources to users.
 - Enabled: *Protect from accidental deletion*
 
 ![IT_Users Group](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/493dfd304f0609663550dfd45513f78bca2f9c18/AD%20Screenshots/IT_Users%20Group.png)
