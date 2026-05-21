@@ -2,7 +2,7 @@
   <img src="AD%20Screenshots/MS%20Active%20Directory%20Logo.png" alt="MS Active Directory Logo" width="600" height="600">
 </p>
 
-# Phase 2: User & Group Management
+# Phase 2: User & Security Group Management
 This phase demonstrates how New Users and Departments are implemented in Active Directory for a fictitious department store by the name of Shopper's Rite LLC, the domain: helpdesklabs.local
 
 <p align="center">
