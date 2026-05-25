@@ -106,8 +106,18 @@ The user's workstation will lock after 5–10 minutes (600 seconds) of inactivit
 
 ## Common Active Directory Tasks
 
-- Unlock a locked user account after multiple failed login attempts.
-- Reset a user password and enforce password change at next login.
+Here are some of the most common Active Directory scenarios you may face while working in a Technical Support Environment;
+
+Issue: User Locked out of their Domain Login
+Possible Cause: The user has entered the incorrect password multiple times, or their password has expired after they have spent a significant amount of time offline. i.e., during vacation or a leave of absence.
+Solution:
+- Confirm the User's Full Name and Log-On Username
+- Go to Active Directory > 
+
+  ![User View Lockout](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+  
+- Password Reset
+  - This may be requested by the user
 - Grant access by adding a user to the correct security group.
 - Onboard a new employee (create user, assign OU, and group).
 - Disable an account for a terminated employee.
