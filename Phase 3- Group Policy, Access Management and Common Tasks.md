@@ -38,10 +38,12 @@ The user would be required to create a password of at least 10 characters, with 
 
 ![Password Policy Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/5c27a3f94269651ebae74c5918e07af50a30d3c7/AD%20Screenshots/Password%20Policy%20Settings.png)
 
+
 **2. Account Lockout Policy**
 The user would be locked out after 5 failed attempts and unlocked after 30 minutes.
 
-![Lockout Policy Settings](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![Lockout Policy Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Lockout%20Policy%20Settings.png)
+
 ![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
 
@@ -49,7 +51,7 @@ The user would be locked out after 5 failed attempts and unlocked after 30 minut
 
 The average user would not be able to insert and utilize removable storage devices to prevent replication of sensitive company data.
 
-![USB Policy Settings](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![USB Policy Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/USB%20Policy%20Settings.png)
 
 ![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
@@ -63,9 +65,9 @@ Title: Shopper's Rite LLC IT Security Notice
 Message:
 "This system is the property of Shopper's Rite LLC and is intended for authorized use only. All access and activity may be monitored, recorded, and audited. Unauthorized use is prohibited and may result in disciplinary or legal action."
 
-![Security Notice Setting](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![Security Notice Setting](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Security%20Notice%20Setting.png)
 
-![Security Banner Confirmed](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![Security Banner Confirmed](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Security%20Banner%20Confirmed.png)
 
 
 **5. Mapped Network Drive: The Sales department got access to a shared network drive.**
@@ -96,7 +98,7 @@ The control panel would be disabled for non-members of the IT_Users Group. This 
 
 The user's workstation will lock after 5–10 minutes (600 seconds) of inactivity for the purpose of privacy.
 
-![Auto Screen Lock Settings](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![Auto Screen Lock Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/27f1592b4138694cbb75e9b0ca887e863697505d/AD%20Screenshots/Auto%20Screen%20Lock%20Settings.png)
 
 ![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
