@@ -20,34 +20,32 @@ The following GPOs were created on Domain Name: helpdesklabs.
 
 [*Server Manager >  Tools > Group Policy Management*]
 
-![GPO Management](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![GPO Management](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/36bc99abfb8a9906a1ad47bce403e073c4ed258b/AD%20Screenshots/GPO%20Management.png)
 
-![GPO helpdesklabs](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![GPO helpdesklabs](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/36bc99abfb8a9906a1ad47bce403e073c4ed258b/AD%20Screenshots/GPO%20helpdesklabs.png)
 
 GPOs 1-4 were applied to the *Account Policies* under *Computer Configuration*.
 
 [*Edit Default Domain Policy > Computer Configuration > Policies >  Windows Settings > Security Settings > Account Policies*]
 
 
-![Account Policies](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![Account Policies](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/5c27a3f94269651ebae74c5918e07af50a30d3c7/AD%20Screenshots/Account%20Policies.png)
 
 
-1. Password Policy
+**1. Password Policy**
 
-The user would be required to create a password with a minimum of 10 characters, with complexity enabled and a 90-day expiry. 
+The user would be required to create a password of at least 10 characters, with complexity enabled and a 90-day expiry. 
 
-![Password Policy Settings](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
-![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![Password Policy Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/5c27a3f94269651ebae74c5918e07af50a30d3c7/AD%20Screenshots/Password%20Policy%20Settings.png)
 
-
-2. Account Lockout Policy
-The user would be locked out after 5 failed attempts, unlock after 30 minutes.
+**2. Account Lockout Policy**
+The user would be locked out after 5 failed attempts and unlocked after 30 minutes.
 
 ![Lockout Policy Settings](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 ![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
 
-3. USB Storage Restriction for non-IT users.
+**3. USB Storage Restriction for non-IT users.**
 
 The average user would not be able to insert and utilize removable storage devices to prevent replication of sensitive company data.
 
@@ -56,7 +54,7 @@ The average user would not be able to insert and utilize removable storage devic
 ![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
 
-4. Login Banner displaying authorized use warning.
+**4. Login Banner displaying authorized use warning.**
 
 This policy was applied under the *Security Options* of the *Local Policies*. The users would be greeted with the following message as a reminder of the company's IT Security policies
 
@@ -70,11 +68,11 @@ Message:
 ![Security Banner Confirmed](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
 
-5. Mapped Network Drive: The Sales department got access to a shared network drive.
+**5. Mapped Network Drive: The Sales department got access to a shared network drive.**
 
 ![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
-6. Desktop Wallpaper Policy - TO COMPLETE
+**6. Desktop Wallpaper Policy - TO COMPLETE**
 This GPO applies the company logo as the wallpaper on all workstations.
 
 ![Wallpaper Setting](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
