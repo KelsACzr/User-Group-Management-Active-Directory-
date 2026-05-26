@@ -147,7 +147,7 @@ Unlock the user's account in Active Directory:
 	- Confirm the User's Full Name and Log-On Username
 	- Go to Active Directory > Go to the toolbar below the menu > Click the "Find Objects in Active Directory Domain Services" icon. 
 
-	![Find Objects in AD Icon](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+	![Find Objects in AD Icon](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/839d83fce65fe7545efc32fd5845896ab1b500ce/AD%20Screenshots/Find%20Objects%20in%20AD%20Icon.png)
 
 	- Change the **In** field to "Entire Directory" > Enter the Username into the **Name** field > Click Find Now.
 	- Once the search results populate in the window below: Double-click the User's Name > Click the **Account Tab** > Check **Unlock Account** > Click OK
