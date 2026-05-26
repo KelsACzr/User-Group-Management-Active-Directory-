@@ -109,7 +109,7 @@ The user's workstation will lock after 5–10 minutes (600 seconds) of inactivit
 Here are some of the most common Active Directory scenarios you may face while working in a Technical Support Environment;
 
 
-**New Employee Onboarding**
+### New Employee Onboarding
 
 As part of the onboarding process, new employees need to have their domain credentials created and provided to them before or upon their assumption of duty. Such a request should be sent to the helpdesk by a company's HR team with the following details;
 	
@@ -135,7 +135,7 @@ _Passwords must be compliant with the GPO Password Policy as shown above_
 The user must then be added to the relevant AD Groups i.e., Finance_Users, SRLLC_All_Users, using the steps mentioned above.
 
 
-**User Locked out of their Domain Login**
+### User Locked out of their Domain Login
 
 This can occur when a user has entered the incorrect password multiple times, or their password has expired after they have spent a significant amount of time offline. i.e., during vacation or a leave of absence.
 
@@ -144,20 +144,21 @@ This can occur when a user has entered the incorrect password multiple times, or
 To alleviate this, the user's account needs to be unlocked, and their password needs to be reset as follows;
 
 Unlock the user's account in Active Directory:
-	- Confirm the User's Full Name and Log-On Username
-	- Go to Active Directory > Go to the toolbar below the menu > Click the "Find Objects in Active Directory Domain Services" icon. 
+- Confirm the User's Full Name and Log-On Username
+- Go to Active Directory > Go to the toolbar below the menu > Click the "Find Objects in Active Directory Domain Services" icon. 
 
-	![Find Objects in AD Icon](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/839d83fce65fe7545efc32fd5845896ab1b500ce/AD%20Screenshots/Find%20Objects%20in%20AD%20Icon.png)
+![Find Objects in AD Icon](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/839d83fce65fe7545efc32fd5845896ab1b500ce/AD%20Screenshots/Find%20Objects%20in%20AD%20Icon.png)
 
-	- Change the **In** field to "Entire Directory" > Enter the Username into the **Name** field > Click Find Now.
-	- Once the search results populate in the window below: Double-click the User's Name > Click the **Account Tab** > Check **Unlock Account** > Click OK
-	- Have the user attempt to log in and confirm that they were able to log in.
+- Change the **In** field to "Entire Directory" > Enter the Username into the **Name** field > Click Find Now.
+- Once the search results populate in the window below: Double-click the User's Name > Click the **Account Tab** > Check **Unlock Account** > Click OK
+- Have the user attempt to log in and confirm that they were able to log in.
 	
 Reset the user's password:
-	- Search for the User's Name or Log-On username using the steps above. 
-	- Right-Click on the User's name as it appears in the search >  Click Reset Password (The account can also be unlocked at this point by checking the "Unlock Account Option") > Click OK
+- Search for the User's Name or Log-On username using the steps above. 
+- Right-Click on the User's name as it appears in the search >  Click Reset Password (The account can also be unlocked at this point by checking the "Unlock Account Option") > Click OK
+
   
-**Restrict or Grant access through Security Groups**
+### Restrict or Grant access through Security Groups**
 In some cases, a user may be unable to access a domain resource as a result of their AD account not being a member of an Active Directory Security Group. There may also be a case where the user is switching departments and needs access to the resources of their new team.
 	
 To add the user to the respective security group. Example: SRLLC_All_Users 
@@ -172,7 +173,7 @@ To add the user to the respective security group. Example: SRLLC_All_Users
 	- To revoke access, the group name is removed from the user's list on the "Member Of" tab: Select the Group Name > Click "Remove" > Click Apply and OK.
 
 	
-**Active Directory Account Termination**
+### Active Directory Account Termination
 The request to terminate an employee's domain account should be sent to the helpdesk by the company's HR Team. This includes;	
 
 - Disabling the User's account: Search the AD account by the Log-on Username > Click the "Account" tab >
