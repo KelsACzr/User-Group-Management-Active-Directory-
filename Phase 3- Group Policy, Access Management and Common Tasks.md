@@ -70,7 +70,7 @@ Message:
 ![Security Banner Confirmed](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Security%20Banner%20Confirmed.png)
 
 
-**5. Mapped Network Drive: The Sales department got access to a shared network drive.**
+**5. Mapped Network Drive: The IT department got access to a shared network drive.**
 
 ![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
@@ -155,7 +155,7 @@ Unlock the user's account in Active Directory:
 	
 Reset the user's password:
 	- Search for the User's Name or Log-On username using the steps above. 
-	-
+	- Right-Click on the User's name as it appears in the search >  Click Reset Password (The account can also be unlocked at this point by checking the "Unlock Account Option") > Click OK
   
 **Restrict or Grant access through Security Groups**
 In some cases, a user may be unable to access a domain resource as a result of their AD account not being a member of an Active Directory Security Group. There may also be a case where the user is switching departments and needs access to the resources of their new team.
