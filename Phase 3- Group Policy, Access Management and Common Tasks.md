@@ -104,7 +104,7 @@ Here are some of the most common Active Directory scenarios you may face while w
 
 ### New Employee Onboarding
 
-As part of the onboarding process, new employees need to have their domain credentials created and provided to them before or upon their assumption of duty. Such a request should be sent to the helpdesk by a company's HR team with the following details;
+As part of the onboarding process, new employees need to have their domain credentials created and provided to them before or upon assuming duty. Such a request should be sent to the helpdesk by a company's HR team with the following details;
 	
 	- Full Name: Alena Jefferson-Clarke
 	- Position: Payroll Clerk II
@@ -115,7 +115,7 @@ As part of the onboarding process, new employees need to have their domain crede
 	
 To create a new user, right-click on the Organizational Unit the user should be assigned to > Click "New" > Click "User"
 	
-![New User Create](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![New User Create](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/53e0849e477dccedcc94eac4220493886c05122e/AD%20Screenshots/New%20User%20Create.png)
 	
 Next, the User Object details are entered as follows: First Name, Last Name, User Log-On Name > Click "Next"
 	
@@ -134,7 +134,7 @@ This can occur when a user has entered the incorrect password multiple times, or
 
 ![User View Lockout](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
-To alleviate this, the user's account needs to be unlocked, and their password needs to be reset as follows;
+To alleviate this, the user's account needs to be unlocked, and their password needs to be reset as follows:
 
 Unlock the user's account in Active Directory:
 - Confirm the User's Full Name and Log-On Username
@@ -155,15 +155,15 @@ Reset the user's password:
 In some cases, a user may be unable to access a domain resource because their AD account is not a member of an Active Directory Security Group. There may also be a case where the user is switching departments and needs access to the resources of their new team.
 	
 To add the user to the respective security group. Example: SRLLC_All_Users 
-	- Confirm the Full Name and AD Log-On with the user
-	- Search for the user using the steps above.
-	- Click the "Member Of" tab > Click "Add" > Go to "Enter the object names to select "Enter the Group Name "SRLLC_All_Users" > Click "Check Names" > Click OK > Click Apply > Click OK
+- Confirm the Full Name and AD Log-On with the user
+- Search for the user using the steps above.
+- Click the "Member Of" tab > Click "Add" > Go to "Enter the object names to select "Enter the Group Name "SRLLC_All_Users" > Click "Check Names" > Click OK > Click Apply > Click OK
 		
-	_Once the group name object is underlined, this means that the group is selected _
+_Once the group name object is underlined, this means that the group is selected _
 		
-	![Add to Sec Group](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![Add to Sec Group](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/53e0849e477dccedcc94eac4220493886c05122e/AD%20Screenshots/Add%20to%20Sec%20Group.png)
 		
-	- To revoke access, the group name is removed from the user's list on the "Member Of" tab: Select the Group Name > Click "Remove" > Click Apply and OK.
+- To revoke access, the group name is removed from the user's list on the "Member Of" tab: Select the Group Name > Click "Remove" > Click Apply and OK.
 
 	
 ### Active Directory Account Termination
