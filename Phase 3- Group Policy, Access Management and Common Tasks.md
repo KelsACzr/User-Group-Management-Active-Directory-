@@ -68,11 +68,7 @@ Message:
 ![Security Banner Confirmed](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Security%20Banner%20Confirmed.png)
 
 
-**5. Mapped Network Drive: The IT department got access to a shared network drive.**
-
-![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
-
-**6. Desktop Wallpaper Policy - TO COMPLETE**
+**5. Desktop Wallpaper Policy - TO COMPLETE**
 This GPO applies the company logo as the wallpaper on all workstations.
 
 ![Wallpaper Setting](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
@@ -80,19 +76,20 @@ This GPO applies the company logo as the wallpaper on all workstations.
 ![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
 
-GPOs 7-8 were applied to the *Account Policies* under *User Configuration*.
+GPOs 6-7 were applied to the *Account Policies* under *User Configuration*.
 
 [*Edit Default Domain Policy > User Configuration > Policies >  Windows Settings > Security Settings > Account Policies*]
 
 
-**7. Disable Control Panel**
+**6. Disable Control Panel**
 The control panel would be disabled for non-members of the IT_Users Group. This requires the creation of a new GPO named "Control Panel Lock for Non-IT Users."
 
 [*GPO Management > Domains > helpdesklabs.local > Right-Click + Group Policy Objects > New*]
 
 ![New GPO Creation](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
-**8. Auto Screen Lock**
+
+**7. Auto Screen Lock**
 
 The user's workstation will lock after 5–10 minutes (600 seconds) of inactivity to protect privacy.
 
@@ -128,7 +125,7 @@ Enter a Temporary Password for the user to log in for the first time. They would
 	
 _Passwords must be compliant with the GPO Password Policy as shown above_
 	
-The user must then be added to the relevant AD Groups i.e., Finance_Users, SRLLC_All_Users, using the steps mentioned above.
+The user must then be added to the relevant AD Groups, i.e., Finance_Users, SRLLC_All_Users, using the steps mentioned above.
 
 
 ### User Locked out of their Domain Login
@@ -154,8 +151,8 @@ Reset the user's password:
 - Right-Click on the User's name as it appears in the search >  Click Reset Password (The account can also be unlocked at this point by checking the "Unlock Account Option") > Click OK
 
   
-### Restrict or Grant access through Security Groups**
-In some cases, a user may be unable to access a domain resource as a result of their AD account not being a member of an Active Directory Security Group. There may also be a case where the user is switching departments and needs access to the resources of their new team.
+### Restrict or Grant access through Security Groups
+In some cases, a user may be unable to access a domain resource because their AD account is not a member of an Active Directory Security Group. There may also be a case where the user is switching departments and needs access to the resources of their new team.
 	
 To add the user to the respective security group. Example: SRLLC_All_Users 
 	- Confirm the Full Name and AD Log-On with the user
