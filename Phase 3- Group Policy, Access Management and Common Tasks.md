@@ -84,7 +84,7 @@ GPOs 6-7 were applied to the *Account Policies* under *User Configuration*.
 **6. Disable Control Panel**
 The control panel would be disabled for non-members of the IT_Users Group. This requires the creation of a new GPO named "Control Panel Lock for Non-IT Users."
 
-[*GPO Management > Domains > helpdesklabs.local > Right-Click + Group Policy Objects > New*]
+[*GPO Management > Domains > Click [Domain Name] > Click Group Policy Objects > New*]
 
 ![New GPO Creation](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
