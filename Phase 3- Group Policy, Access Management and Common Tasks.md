@@ -49,11 +49,9 @@ The user would be locked out after 5 failed attempts and unlocked after 30 minut
 
 **3. USB Storage Restriction for non-IT users.**
 
-The average user would not be able to insert and utilize removable storage devices to prevent replication of sensitive company data.
+The average user would not be able to insert and utilize removable storage devices to prevent replication of sensitive company data and the potential spread of malware within the enterprise environment.
 
 ![USB Policy Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/USB%20Policy%20Settings.png)
-
-![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
 
 **4. Login Banner displaying authorized use warning.**
@@ -87,20 +85,18 @@ GPOs 7-8 were applied to the *Account Policies* under *User Configuration*.
 [*Edit Default Domain Policy > User Configuration > Policies >  Windows Settings > Security Settings > Account Policies*]
 
 
-7. Disable Control Panel
+**7. Disable Control Panel**
 The control panel would be disabled for non-members of the IT_Users Group. This requires the creation of a new GPO named "Control Panel Lock for Non-IT Users."
 
 [*GPO Management > Domains > helpdesklabs.local > Right-Click + Group Policy Objects > New*]
 
-![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![New GPO Creation](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
-8. Auto Screen Lock 
+**8. Auto Screen Lock**
 
 The user's workstation will lock after 5–10 minutes (600 seconds) of inactivity to protect privacy.
 
 ![Auto Screen Lock Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/27f1592b4138694cbb75e9b0ca887e863697505d/AD%20Screenshots/Auto%20Screen%20Lock%20Settings.png)
-
-![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
 
 
 
@@ -164,7 +160,7 @@ In some cases, a user may be unable to access a domain resource as a result of t
 To add the user to the respective security group. Example: SRLLC_All_Users 
 	- Confirm the Full Name and AD Log-On with the user
 	- Search for the user using the steps above.
-	- Click the "Member Of" tab > Click "Add" > Go to "Enter the object names to select "Enter the Group Name "SRLLC_All_Users" > Click "Check Names" > Click OK > Click Apply 		> Click OK
+	- Click the "Member Of" tab > Click "Add" > Go to "Enter the object names to select "Enter the Group Name "SRLLC_All_Users" > Click "Check Names" > Click OK > Click Apply > Click OK
 		
 	_Once the group name object is underlined, this means that the group is selected _
 		
@@ -174,11 +170,9 @@ To add the user to the respective security group. Example: SRLLC_All_Users
 
 	
 ### Active Directory Account Termination
-The request to terminate an employee's domain account should be sent to the helpdesk by the company's HR Team. This includes;	
+The request to terminate an employee's domain account should be sent to the helpdesk by the company's HR Team. This includes disabling the User's account: Search the AD account by the Log-on Username > Right-Click on the account > Click "Disable Account"
 
-- Disabling the User's account: Search the AD account by the Log-on Username > Click the "Account" tab >
-
-- Resetting the Password using the steps shown above.
-		
 _The account/data should not be deleted as the contents may be needed for a company's records._
+
+![Disable User Account](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/d3e3c06020d7c6ef643500527b41fbb5bd0d9edc/AD%20Screenshots/Disable%20User%20Account.png)
 
