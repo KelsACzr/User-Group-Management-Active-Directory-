@@ -66,12 +66,22 @@ Message:
 ![Security Banner Confirmed](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Security%20Banner%20Confirmed.png)
 
 
-**5. Desktop Wallpaper Policy - TO COMPLETE**
-This GPO applies the company logo as the wallpaper on all workstations.
 
-![Wallpaper Setting](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+**5. Desktop Wallpaper Policy**
 
-![GPO TEST CONFIRMATION](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+This GPO applies the company logo as the wallpaper on all workstations by default in the GPO Management.
+
+[Right-Click on target group > Click "Create a GPO In this domain, and link it here" > GPO Name: SRLLC Wallpaper Default > OK > Right-Click on the new GPO > Click "Edit"]
+
+The Desktop Wallpaper setting was applied under "User Config > Policies > Admin Templates > Desktop > Desktop"
+
+![Wallpaper Setting](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/d24253ed7de31bce6175c326c38f3e59b6a1a1c4/AD%20Screenshots/Wallpaper%20Setting.png)
+
+The target wallpaper file was saved in the company's shared drive, SRLLC Shared Drive.
+
+File Path: "\\VMSERVER.helpdesklabs.local\SRLLC Share\SRLLC_Logo.png"
+
+![GPO Wall CONFIRMATION](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/d24253ed7de31bce6175c326c38f3e59b6a1a1c4/AD%20Screenshots/GPO%20Wall%20CONFIRMATION.png)
 
 
 GPOs 6-7 were applied to the *Account Policies* under *User Configuration*.
