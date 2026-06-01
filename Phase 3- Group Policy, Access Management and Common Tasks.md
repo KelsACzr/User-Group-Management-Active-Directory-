@@ -44,8 +44,6 @@ The user would be locked out after 5 failed attempts and unlocked after 30 minut
 
 ![Lockout Policy Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Lockout%20Policy%20Settings.png)
 
-![Account Lockout Policy](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/f29f60418c9f181373635eb97004fe8b0f30b5fa/AD%20Screenshots/Account%20Lockout%20Policy.png)
-
 
 **3. USB Storage Restriction for non-IT users.**
 
@@ -132,7 +130,7 @@ The user must then be added to the relevant AD Groups, i.e., Finance_Users, SRLL
 
 This can occur when a user has entered the incorrect password multiple times, or their password has expired after they have spent a significant amount of time offline. i.e., during vacation or a leave of absence.
 
-![User View Lockout](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
+![Account Lockout Policy](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/f29f60418c9f181373635eb97004fe8b0f30b5fa/AD%20Screenshots/Account%20Lockout%20Policy.png)
 
 To alleviate this, the user's account needs to be unlocked, and their password needs to be reset as follows:
 
