@@ -65,7 +65,8 @@ Message:
 
 ![Security Banner Confirmed](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Security%20Banner%20Confirmed.png)
 
-GPOs 5-7 were applied to the *Account Policies* under *User Configuration*.
+GPOs 5-6 were applied to the *Account Policies* under *User Configuration*.
+
 
 **5. Desktop Wallpaper Policy**
 
@@ -87,15 +88,7 @@ File Path: "\\VMSERVER.helpdesklabs.local\SRLLC Share\SRLLC_Logo.png"
 [*Edit Default Domain Policy > User Configuration > Policies >  Windows Settings > Security Settings > Account Policies*]
 
 
-**6. Disable Control Panel**
-The control panel would be disabled for non-members of the IT_Users Group. This requires the creation of a new GPO named "Control Panel Lock for Non-IT Users."
-
-[*GPO Management > Domains > Click [Domain Name] > Click Group Policy Objects > New*]
-
-![New GPO Creation](AD%20Screenshots/MS%20Active%20Directory%20Logo.png)
-
-
-**7. Auto Screen Lock**
+**6. Auto Screen Lock**
 
 The user's workstation will lock after 5–10 minutes (600 seconds) of inactivity to protect privacy.
 
