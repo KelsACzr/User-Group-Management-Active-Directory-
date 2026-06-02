@@ -4,7 +4,7 @@
 
 # Phase 3: Group Policy, Access Management, and Common Tasks
  
- This phase demonstrates the application of Group Policy Objects (GPOs) in Active Directory for a fictitious department store by the name of Shopper's Rite LLC on the Domain Controller (DC): helpdesklabs.
+ This phase demonstrates the implementation of Group Policy Objects (GPOs) in Active Directory for a fictitious department store by the name of Shopper's Rite LLC on the Domain Controller (DC): helpdesklabs.
  
  ## Environments & Technologies
 - Oracle VirtualBox
@@ -16,7 +16,7 @@
 
 ## Group Policy Objects (GPOs) Creation
 
-The following GPOs were created on Domain Name: helpdesklabs.
+The following GPOs were created within Domain Name: helpdesklabs.
 
 [*Server Manager >  Tools > Group Policy Management*]
 
@@ -34,27 +34,27 @@ GPOs 1-4 were applied to the *Account Policies* under *Computer Configuration*.
 
 **1. Password Policy**
 
-The user would be required to create a password of at least 10 characters, with complexity enabled and a 90-day expiry. 
+Users are required to create a password of at least 10 characters, with complexity enabled and a 90-day expiry. 
 
 ![Password Policy Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/5c27a3f94269651ebae74c5918e07af50a30d3c7/AD%20Screenshots/Password%20Policy%20Settings.png)
 
 
 **2. Account Lockout Policy**
-The user would be locked out after 5 failed attempts and unlocked after 30 minutes.
+Users are locked out after 5 failed attempts and unlocked after 30 minutes.
 
 ![Lockout Policy Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Lockout%20Policy%20Settings.png)
 
 
 **3. USB Storage Restriction for non-IT users.**
 
-The average user would not be able to insert and utilize removable storage devices to prevent replication of sensitive company data and the potential spread of malware within the enterprise environment.
+Standard users would not be able to insert and utilize removable storage devices to prevent replication of sensitive company data and the potential spread of malware within the enterprise environment.
 
 ![USB Policy Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/USB%20Policy%20Settings.png)
 
 
 **4. Login Banner displaying authorized use warning.**
 
-This policy was applied under the *Security Options* of the *Local Policies*. The users would be greeted with the following message as a reminder of the company's IT Security policies
+This policy was applied under the *Security Options* of the *Local Policies*. Users are presented with the following message as a reminder of the company's IT Security policies
 
 Title: Shopper's Rite LLC IT Security Notice
 
@@ -65,7 +65,7 @@ Message:
 
 ![Security Banner Confirmed](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Security%20Banner%20Confirmed.png)
 
-GPOs 5-6 were applied to the *Account Policies* under *User Configuration*.
+GPOs 5-6 were applied to the *Account Policies* under the *User Configuration* administrative templates.
 
 
 **5. Desktop Wallpaper Policy**
@@ -90,7 +90,7 @@ File Path: "\\VMSERVER.helpdesklabs.local\SRLLC Share\SRLLC_Logo.png"
 
 **6. Auto Screen Lock**
 
-The user's workstation will lock after 5–10 minutes (600 seconds) of inactivity to protect privacy.
+User workstations will lock after 5–10 minutes (600 seconds) of inactivity to protect privacy.
 
 ![Auto Screen Lock Settings](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/27f1592b4138694cbb75e9b0ca887e863697505d/AD%20Screenshots/Auto%20Screen%20Lock%20Settings.png)
 
@@ -103,7 +103,7 @@ Here are some of the most common Active Directory scenarios you may face while w
 
 ### New Employee Onboarding
 
-As part of the onboarding process, new employees need to have their domain credentials created and provided to them before or upon assuming duty. Such a request should be sent to the helpdesk by a company's HR team with the following details;
+As part of the onboarding process, new employees need to have their domain credentials created and provided to them before or upon assuming duty. Such requests should be submitted to the helpdesk by a company's HR team with the following details;
 	
 	- Full Name: Alena Jefferson-Clarke
 	- Position: Payroll Clerk II
@@ -118,9 +118,9 @@ To create a new user, right-click on the Organizational Unit the user should be 
 	
 Next, the User Object details are entered as follows: First Name, Last Name, User Log-On Name > Click "Next"
 	
-_User Log-On names should only contain alphanumeric characters and not contain spaces or special characters. Example: ajclarke_
+_User logon names should only contain alphanumeric characters and not contain spaces or special characters. Example: ajclarke_
 	
-Enter a Temporary Password for the user to log in for the first time. They would be prompted to change their password upon their first login > Click "Finish"
+Enter a Temporary Password for the user to log in for the first time. They would be prompted to change their password upon first logon > Click "Finish"
 	
 _Passwords must be compliant with the GPO Password Policy as shown above_
 	
@@ -129,11 +129,11 @@ The user must then be added to the relevant AD Groups, i.e., Finance_Users, SRLL
 
 ### User Locked out of their Domain Login
 
-This can occur when a user has entered the incorrect password multiple times, or their password has expired after they have spent a significant amount of time offline. i.e., during vacation or a leave of absence.
+This can occur when a user has entered the incorrect password multiple times, or their password has expired after they have spent a significant length of time offline. i.e., during vacation or a leave of absence.
 
 ![Account Lockout Policy](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/f29f60418c9f181373635eb97004fe8b0f30b5fa/AD%20Screenshots/Account%20Lockout%20Policy.png)
 
-To alleviate this, the user's account needs to be unlocked, and their password needs to be reset as follows:
+To alleviate this issue, the user's account needs to be unlocked, and their password needs to be reset as follows:
 
 Unlock the user's account in Active Directory:
 - Confirm the User's Full Name and Log-On Username
@@ -143,7 +143,7 @@ Unlock the user's account in Active Directory:
 
 - Change the **In** field to "Entire Directory" > Enter the Username into the **Name** field > Click Find Now.
 - Once the search results populate in the window below: Double-click the User's Name > Click the **Account Tab** > Check **Unlock Account** > Click OK
-- Have the user attempt to log in and confirm that they were able to log in.
+- Ask the user to log in and confirm that they were able to log in.
 	
 Reset the user's password:
 - Search for the User's Name or Log-On username using the steps above. 
@@ -151,10 +151,10 @@ Reset the user's password:
 
   
 ### Restrict or Grant access through Security Groups
-In some cases, a user may be unable to access a domain resource because their AD account is not a member of an Active Directory Security Group. There may also be a case where the user is switching departments and needs access to the resources of their new team.
+In some cases, a user may be unable to access a domain resource because their AD account is not a member of an Active Directory Security Group. Users may also require access changes when transferring to another department or assuming new responsibilities.
 	
 To add the user to the respective security group. Example: SRLLC_All_Users 
-- Confirm the Full Name and AD Log-On with the user
+- Confirm the Full Name and Active Directory logon with the user
 - Search for the user using the steps above.
 - Click the "Member Of" tab > Click "Add" > Go to "Enter the object names to select "Enter the Group Name "SRLLC_All_Users" > Click "Check Names" > Click OK > Click Apply > Click OK
 		
@@ -166,9 +166,9 @@ _Once the group name object is underlined, this means that the group is selected
 
 	
 ### Active Directory Account Termination
-The request to terminate an employee's domain account should be sent to the helpdesk by the company's HR Team. This includes disabling the User's account: Search the AD account by the Log-on Username > Right-Click on the account > Click "Disable Account"
+Requests to terminate an employee's domain account should be sent to the helpdesk by the company's HR Team. This includes disabling the user's account: Search the AD account by the Log-on Username > Right-Click on the account > Click "Disable Account"
 
-_The account/data should not be deleted as the contents may be needed for a company's records._
+_The account and associated data should not be deleted as the contents may be needed for auditing, compliance, or record retention purposes._
 
 ![Disable User Account](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/d3e3c06020d7c6ef643500527b41fbb5bd0d9edc/AD%20Screenshots/Disable%20User%20Account.png)
 
