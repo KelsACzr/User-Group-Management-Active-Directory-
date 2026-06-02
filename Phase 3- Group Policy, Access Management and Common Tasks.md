@@ -65,7 +65,7 @@ Message:
 
 ![Security Banner Confirmed](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/b0812a6ad11be36aff8f3b7118c3470bf96191d7/AD%20Screenshots/Security%20Banner%20Confirmed.png)
 
-
+GPOs 5-7 were applied to the *Account Policies* under *User Configuration*.
 
 **5. Desktop Wallpaper Policy**
 
@@ -83,8 +83,6 @@ File Path: "\\VMSERVER.helpdesklabs.local\SRLLC Share\SRLLC_Logo.png"
 
 ![GPO Wall CONFIRMATION](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/d24253ed7de31bce6175c326c38f3e59b6a1a1c4/AD%20Screenshots/GPO%20Wall%20CONFIRMATION.png)
 
-
-GPOs 6-7 were applied to the *Account Policies* under *User Configuration*.
 
 [*Edit Default Domain Policy > User Configuration > Policies >  Windows Settings > Security Settings > Account Policies*]
 
