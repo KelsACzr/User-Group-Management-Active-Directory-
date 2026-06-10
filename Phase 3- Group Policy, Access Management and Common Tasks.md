@@ -129,7 +129,7 @@ The user must then be added to the relevant AD Groups, i.e., Finance_Users, SRLL
 
 ### User Locked out of their Domain Login
 
-This can occur when a user has entered the incorrect password multiple times, or their password has expired after they have spent a significant length of time offline. i.e., during vacation or a leave of absence.
+This can occur when a user has entered the incorrect password multiple times, or when their password has expired after they have been offline for a significant period. i.e., during vacation or a leave of absence.
 
 ![Account Lockout Policy](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/f29f60418c9f181373635eb97004fe8b0f30b5fa/AD%20Screenshots/Account%20Lockout%20Policy.png)
 
@@ -148,6 +148,14 @@ Unlock the user's account in Active Directory:
 Reset the user's password:
 - Search for the User's Name or Log-On username using the steps above. 
 - Right-Click on the User's name as it appears in the search >  Click Reset Password (The account can also be unlocked at this point by checking the "Unlock Account Option") > Click OK
+
+Another variation of this authentication issue may occur if the workstation cannot communicate with a Domain Controller for an extended period. 
+
+When a user’s password is reset in Active Directory while their workstation is disconnected from the corporate network, services that authenticate directly against Active Directory, such as Email, VPN access, and other online services, will immediately recognize the new password. However, if the workstation cannot communicate with a Domain Controller, it may still rely on outdated cached credentials.
+
+This can result in the user being unable to log in to their workstation, creating what appears to be a lockout loop. In other cases, the trust relationship (secure channel) between the workstation and the domain may break, preventing authentication altogether.
+
+![Lock Out Variation](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/e274a7301c57de33669e64dbe0a5e806bd4b603a/AD%20Screenshots/Lock%20Out%20Variation.png)
 
   
 ### Restrict or Grant access through Security Groups
