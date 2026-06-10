@@ -155,7 +155,7 @@ When a user’s password is reset in Active Directory while their workstation is
 
 This can result in the user being unable to log in to their workstation, creating what appears to be a lockout loop. In other cases, the trust relationship (secure channel) between the workstation and the domain may break, preventing authentication altogether.
 
-![Lock Out Variation](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/e274a7301c57de33669e64dbe0a5e806bd4b603a/AD%20Screenshots/Lock%20Out%20Variation.png)
+![Lock Out Variation](https://github.com/KelsACzr/User-Group-Management-Active-Directory-/blob/8e23b63e69293496213d83e1a1e7b48dda99e8ab/AD%20Screenshots/Lock%20Out%20Variation.png)
 
   
 ### Restrict or Grant access through Security Groups
